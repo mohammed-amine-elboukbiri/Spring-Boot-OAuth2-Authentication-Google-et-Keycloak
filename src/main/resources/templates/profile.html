@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profil</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h2>Profil Utilisateur</h2>
+
+        <img th:src="${picture}" width="100"/>
+
+        <p><strong>Nom :</strong> <span th:text="${name}"></span></p>
+        <p><strong>Email :</strong> <span th:text="${email}"></span></p>
+
+        <a href="/logout" class="btn logout">Se déconnecter</a>
+
+    </div>
+</div>
+
+</body>
+</html>
